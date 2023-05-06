@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Week10 링크 속성 실습2</title>
+        <style>
+            .dropdown{
+                display: inline; /*블럭이 새로로 배치, 영역이 높이와 크기를 가짐*/
+            }
+            .dropdown-content{
+                display: none;  /*none 보이지 말아라*/
+                background-color: rgb(147, 255, 251);
+                width: fit-content; /*컨텐츠 영역에 맞게 넓이 조정*/
+                padding: 8px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);  /*a 알파 투명도*/
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;  /* dropdown 영역에 들어가면 보이기*/
+            }
+
+
+            
+        </style>
+    </head>
+    <body>
+        <h1>Web Programming</h1>
+        <div class = " dropdown">
+            <span>CSS/JavaScript</span>
+            <div class = "dropdown-content">
+                <p>CSS와 JavaScript를 학습한다.</p>
+            </div>
+        </div>
+        <div class = " dropdown">
+            <span>CSS/JavaScript</span>
+            <div class = "dropdown-content">
+                <p>CSS와 JavaScript를 학습한다.</p>
+            </div>
+        </div>
+    </body>
+</html>
