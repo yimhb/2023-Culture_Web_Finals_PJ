@@ -1,141 +1,121 @@
 <!DOCTYPE html>
+
+<!-- 네비게이션 바에 로고 삽입까지 완료-->
+<!-- 슬라이드 삽입-->
+
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
         <title>문화웹콘 기말 프로젝트 메인페이지</title>
+
+        <!-- 네비게이션 바 스타일 -->
+        <link rel="stylesheet" type="text/css" href="nav.css" />
+
+        <!-- 슬라이드 배너 스타일 -->
+        <link rel="stylesheet" type="text/css" href="banner.css" />
+
         <style>
 
-        /* */ 
-        *{
-        margin: 0;
-        padding: 0;
-        }
-
-        #wrapper {
-        background-color: #F8ECD1;
-
-        position: relative;
-        }
-
-        #nav {
-        width: 100%;
-        max-width: 1024px;
-
-        margin: 0 auto;
-        }
-
-        #menu__list {
-        display: table;
-        list-style-type: none;
-
-        width: 100%;
-
-        text-align: center;
-        }
-
-        #menu__menu {
-        display: table-cell;
-        vertical-align: middle;
-
-        height: 50px;
-        }
-
-        #menu__menu:hover {
-        background-color: #DEB6AB;
-        }
-
-        #menu__menu:hover #subwrapper {
-        display: block;
-        }
-
-        #menu__menu:hover #submenu__list {
-        display: table;
-        }
-
-        #subwrapper {
-        display: none;
-
-        background-color: #DEB6AB;
-
-        width: 100%;
-
-        position: absolute;
-        top: 50px;
-        left: 0;
-        }
-
-        #subnav {
-        width: 100%;
-        max-width: 1024px;
-
-        margin: 0 auto;
-        }
-
-        #submenu__list {
-        display: none;
-        list-style-type: none;
-
-        width: 100%;
-
-        text-align: center;
-        }
-
-        #submenu__menu {
-        display: table-cell;
-        vertical-align: middle;
-
-        height: 50px;
-
-        cursor: pointer;
-        }
-
-        #submenu__menu:hover {
-        background-color: #AC7D88;
-        }
-           
-
-
-            
+        
         </style>
+
+
     </head>
     <body>
-        <table style='border: 10px; border-color: #000;', width="100%"> <!--***외곽선 나타내는 방법1: css style 이용하기-->
-            <tr align="center">
-                <td style="width: 10%;"><!--로고삽입--><img src="./img_final/logo.png"; width="100%"></td>
-                <td style="width: 90%;">
-                    <!--네이게이션 바-->
-                    <div id="wrapper">
-                        <nav id="nav">
-                        <ul id="menu__list">
-                            <li id="menu__menu">
-                            메뉴 1
-                            <div id="subwrapper">
-                                <nav id="subnav">
-                                <ul id="submenu__list">
-                                    <li id="submenu__menu">서브메뉴 1</li>
-                                    <li id="submenu__menu">서브메뉴 2</li>
-                                    <li id="submenu__menu">서브메뉴 3</li>
-                                </ul>
-                                </nav>
+        <!-- 네비게이션 바 시작 -->
+        <div class = "nav_div">
+            <nav>
+                <ul class = "nav_header">
+                    <ul class = "nav_header_logo">
+                        <div class = "nav_logo">
+                            <a href = "#"><img src="./img_final/logo.png", width="100px"></a> <!-- **로고 하이퍼링크 넣기**-->
+                        </div>
+                    </ul>
+                    <ul class = "nav_header_menu">
+                        <div class = "nav_menu">사이트 소개
+                            <div class = "nav_contents">
+                                <li>인사말</li>
+                                <li>개발자 소개</li>
                             </div>
-                            </li>
-                            <li id="menu__menu">
-                            메뉴 2
-                            <div id="subwrapper">
-                                <nav id="subnav">
-                                <ul id="submenu__list">
-                                    <li id="submenu__menu">서브메뉴 a</li>
-                                    <li id="submenu__menu">서브메뉴 b</li>
-                                    <li id="submenu__menu">서브메뉴 c</li>
-                                </ul>
-                                </nav>
+                        </div>
+
+
+                        <div class = "nav_menu">상담하기
+                            <div class = "nav_contents">
+                                <li>상담 개요</li>
+                                <li>상담 신청</li>
                             </div>
-                            </li>
-                        </ul>
-                        </nav>
+                        </div>
+
+                        <div class = "nav_menu">친구 맺기
+                            <div class = "nav_contents">
+                                <li>친구 되어주기</li>
+                                <li>친구 찾기</li>
+                            </div>
+                        </div>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+        <!-- 네비게이션 바 종료-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- 슬라이드 배너 시작-->
+        <div class="banner">
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                      <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
                     </div>
-                </td>
-            </tr>
-            </table>
+                  </li>
+
+                  <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                  </li>
+
+                  <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                  </li>
+
+                  <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                  </li>
+                </ol>
+
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                  </ol>
+                </aside>
+            </section>
+        </div>
+
+
+
     </body>
 </html>
