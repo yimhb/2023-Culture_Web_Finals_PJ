@@ -2,12 +2,9 @@
 /* 네비게이션 바 스타일 */
 
     nav{
-        width: 90%;
+        max-width: 90%;
         margin:0 auto;          /* 오버플로우 방지*/
-        height: 30px;
-        margin-left:auto;
-        margin-right: auto;
-
+        
         color: #272524;
     }
 
@@ -70,6 +67,7 @@
     /* 로고 위에 네비게이션 바 겹치기, 이게 맞는 건가..? */
     .nav_header_logo{
         position: relative;
+        background-color: #F4B31A;
     }
     
     
