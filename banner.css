@@ -1,87 +1,73 @@
+/* 슬라이드 배너 스타일 */
 
-/* 네비게이션 바 스타일 */
-
-nav{
-    max-width: 90%;
-    margin:0 auto;          /* 오버플로우 방지*/
-    
-
+*{
+    height: fit-content;
 }
 
-.nav_header_menu{
-
-    line-height: 35px;
-    
-    text-align:center;     /*메뉴 가운데로 정렬*/
-
-}
-  
-.nav_header_logo{
-    width: 130px;
-    line-height: 30px;
-    vertical-align: middle ; 
-    text-align: left ;      /*메뉴 가운데로 정렬*/
+.section input[id*="slide"]{    /* 슬라이더 */
+    display: none;
 }
 
-.nav_menu{
-    display: inline-flex;   /*메뉴 가로로 배치, flex: 각 영역을 분리 시켜주어 컨텐츠 창이 따라 가도록 한다., 영역이 높이와 크기를 가지지 않음*/
-    padding: 30px 70px 10px 70px;
-    
-
-    position:relative;      /* 컨텐츠 창이 메뉴창에 방해가지 않도록 부모 엘리먼트로 설정*/
-    font-size: 17px;
-    font-weight: 600;
-
-}
-.nav_contents{
-    display: none;          /*컨텐츠 보이지 않도록 배치*/
-    font-size: 17px;
-
-    padding: 8px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);  a 알파 투명도 */
-    list-style: none;       /* 컨텐츠 불릿 없애기*/ 
-
-    position: absolute;     /* 컨텐츠 창이 메뉴창에 방해가지 않도록 자식 앨리먼트로 설정*/
-    width: 100%;            /* 부모영역과 같게 넓이 조정*/
-    bottom: -119px ;        /* 컨텐츠 창이 메뉴창에 방해가지 않도록 부모요소 기준으로 아래로 내림*/
-    left: 0px;
-
-}
-.nav_menu:hover .nav_contents{
-    display: block;         /* 메뉴 마우스 오버 시 컨텐츠 세로로 배치*/
+.section .slidewrap {
+    max-width: 1200px;         /* 화면 내 배너 최대넓이 */
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.nav_contents li{           /* 컨텐츠 간 여백 _ 가독성*/
-    padding:  5px 8px;
-    color: #1a1818;
-} 
-.nav_contents li:hover{     /* 콘텐츠 마우스 오버 시 오버항목 색상 변경 표시*/
-    background-color: #007bff50;
-    
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
 }
 
+.section .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
 
-/* 로고 위에 네비게이션 바 겹치기, 이게 맞는 건가..? */
-.nav_header_logo{
+.section .slidelist > li > a {
+    display: block;
     position: relative;
 }
 
-
-.nav_header_logo{
-    position: absolute;
+.section .slidelist > li > a img {
+    width: 100%;
 }
 
-.nav_header_logo .nav_header_menu{
+.section .slidelist label{          /* 다음 넘기는 화살표 공간 */
     position: absolute;
+    z-index: 10;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
 }
 
-.nav_hr{
-
-    background-color: #007AFF;
-    height: 4px;
-
+.section .slidelist .left {         /* 이전 화살표 */
+    left:30px;
+    background: url('./img_final/left.png') center center / 100% no-repeat;
 }
+
+.section .slidelist .right {        /* 다음 화살표 */
+    right:30px;
+    background: url('./img_final/right.png') center center / 100% no-repeat;
+}
+
+.section .slidelist .textbox {position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1.6;text-align:center;}
+	
+.section .slidelist .textbox h3 {font-size:50px;color:#fff;opacity:0;transform:translateY(30px);transition:all .5s;}
+.section .slidelist .textbox p {font-size:24px;color:#fff;opacity:0;transform:translateY(30px);transition:all .5s;}
+
+/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+/* INPUT이 체크되면 변화값이 LEFT,RIGHT에 전달되는 스타일 */
+.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .left {left:30px;transition:all .35s ease .5s;} /* 1번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .right {right:30px;transition:all .35s ease .5s;} /* 1번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .left {left:30px;transition:all .35s ease .5s;} /* 2번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .right {right:30px;transition:all .35s ease .5s;} /* 2번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .left {left:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
+.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .right {right:30px;transition:all .35s ease .5s;} /* 3번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
