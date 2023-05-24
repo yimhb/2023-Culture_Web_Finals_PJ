@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="nav.css" />
 
         <!-- 슬라이드 배너 스타일 -->
-        <link rel="stylesheet" type="text/css" href="banner.css" />
+        <link rel="stylesheet" type="text/css" href="Banner.css" />
 
         <style>
 
@@ -32,28 +32,30 @@
                 <ul class = "nav_header">
                     <ul class = "nav_header_logo">
                         <div class = "nav_logo">
-                            <a href = "#"><img src="./img_final/logo.png", width="100px"></a> <!-- **로고 하이퍼링크 넣기**-->
+                            <a href = "#"><img src="./img_final/로고.png", width="100px"></a> <!-- **로고 하이퍼링크 넣기**-->
                         </div>
                     </ul>
                     <ul class = "nav_header_menu">
-                        <div class = "nav_menu">홈페이지 소개
-                            <div class = "nav_contents">
-                                <li>인사말</li>
-                                <li>개발자 소개</li>
-                            </div>
+                      <div class = "nav_menu">홈페이지 소개
+                        <div class = "nav_contents">
+                            <li>인사말</li>
+                            <li>개발자 소개</li>
                         </div>
+                    </div>
 
 
-                        <div class = "nav_menu">프로그램 소개
-                            <div class = "nav_contents">
-                                <li>내부 프로그램</li>
-                                <li>외부 프로그램</li>
-                            </div>
+                    <div class = "nav_menu">프로그램 소개
+                        <div class = "nav_contents">
+                            <li>내부 프로그램</li>
+                            <li>외부 프로그램</li>
                         </div>
+                    </div>
                     </ul>
                 </ul>
             </nav>
         </div>
+        
+        <hr class = "nav_hr">
         <!-- 네비게이션 바 종료--> 
         <br>
         <br>
@@ -61,55 +63,36 @@
         <br>
         <br>
         <!-- 슬라이드 배너 시작-->
-        <div class="banner">
-            <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                  <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                      <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                      <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                    </div>
-                  </li>
-
-                  <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                  </li>
-
-                  <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                  </li>
-
-                  <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                  </li>
-                </ol>
-
-                <aside class="carousel__navigation">
-                  <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+    
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a>
+                            <label for="slide03" class="left"></label>
+                            <img src="./img_final/다운로드.jpg">
+                            <label for="slide02" class="right"></label>
+                        </a>
                     </li>
-
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    <li>
+                        <a>
+                            <label for="slide01" class="left"></label>
+                            <img src="./img_final/slide02.jpg">
+                            <label for="slide03" class="right"></label>
+                        </a>
                     </li>
-
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    <li>
+                        <a>
+                            <label for="slide02" class="left"></label>
+                            <img src="./img_final/slide03.jpg">
+                            <label for="slide01" class="right"></label>
+                        </a>
                     </li>
-
-                    <li class="carousel__navigation-item">
-                      <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                  </ol>
-                </aside>
-            </section>
+                </ul>
+            </div>
         </div>
         <!-- 슬라이드 배너 종료-->
 
@@ -121,10 +104,7 @@
 
         <!-- 학교폭력 개요 -->
 
-
-
-
-
+        
 
 
 
