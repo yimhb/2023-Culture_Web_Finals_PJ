@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>문화웹콘 기말 프로젝트 학교 폭력 개요</title>
+        <!-- 네비게이션 바 스타일 -->
+        <link rel="stylesheet" type="text/css" href="Nav.css"/>
+
+        <!-- 웹 폰트 적용 -->
+        <link rel="stylesheet" type="text/css" href="font.css"/>
+
+        <style>
+            body { background-color: rgb(228, 244, 252);
+                 text-align: center;}
+            h1 { font-size: 250%;}
+            a:link { color: black;}
+            a:hover { color: antiquewhite;}
+            a:visited{
+                color: black;
+            }
+            
+            a{
+                text-decoration: none;
+                font-size: medium;
+                text-align: center;}
+
+
+
+        </style>
+    </head>
+    <body>
+        <!-- 네비게이션 바 시작 -->
+        <div class = "nav_div">
+            <nav>
+                <ul class = "nav_header">
+                    <ul class = "nav_header_logo">
+                        <div class = "nav_logo">
+                            <a href = "./index.html"><img src="./img_final/로고.png", width="100px"></a> <!-- **로고 하이퍼링크 넣기**-->
+                        </div>
+                    </ul>
+                    <ul class = "nav_header_menu">
+                        <div class = "nav_menu">홈페이지 소개
+                            <div class = "nav_contents">
+                                <li><a href="./final_greeting.html">인사말</a></li>
+                                <li><a href="./final_developer.html">개발자 소개</a></li>
+                            </div>
+                        </div>
+                        <div class = "nav_menu">학교폭력 소개
+                            <div class = "nav_contents">
+                                <li><a href="./final_VioOver.html">학교폭력 개요</a></li>
+                                <li><a href="./final_VioEx.html">학교폭력 현황</a></li>
+                                <li><a href="./final_VioSitu.html">학교폭력 사례</a></li>
+                            </div>
+                        </div>
+
+                        <div class = "nav_menu">프로그램 소개
+                            <div class = "nav_contents">
+                                <li><a href="./final_makefriend.html">친구 맺기 프로그램</a></li>
+                                <li><a href="./final_interPRO.html">내부 프로그램 소개</a></li>
+                                <li><a href="./final_exterPRO.html">외부 프로그램 소개</a></li>
+                            </div>
+                        </div>
+                        <div class = "nav_menu">
+
+                        </div>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+        
+        <hr class = "nav_hr">
+        <!-- 네비게이션 바 종료--> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+                   <!-- 학교폭력 개요 -->
+    <hr style="border: 0; height: 10px; background: #007bff50;">
+        <table border="0" align="center" width = "800px" style="font-size: 25px; color : #000000ad; background-color: #007bff1f;" >
+            <tr>
+                <td >
+                    <a href="./final_VioOver.html">학교 폭력 개요</a>
+                </td>
+                <td>
+                    <a href="./final_VioEx.html">학교 폭력 사례 </a>
+                </td>
+                <td>
+                    <a href="./final_VioSitu.html">학교 폭력 현황</a>
+                </td>
+            </tr>
+        </table>
+        <hr style="border: 0; height: 10px; background: #007bff50;">
+        <br>
+        <br>
+        <h1>학교 폭력 현황</h1>
+        <center>
+            교육부는 16개 시도교육감이 초·중·고등학교(초4~고3) 학생들을 대상으로 실시한 ‘2022년 1차 학교폭력 실태조사(전수조사)’ 결과를 발표했다.<br> 
+            이번 조사는 학생들의 자발적 참여를 원칙으로 온라인과 모바일을 통해 진행되었으며, 참여율은 82.9%(321만 명)으로 2021년 1차 조사 대비 5.9%p(23만 명) 감소했다.<br>
+           <img src="./img/현황1.png">
+        <br>
+        <br>
+        <br>
+        <center>
+            조사 결과, 피해 응답률은 1.7%(5.4만 명)로 2021년 1차 조사 대비 0.6%p 증가했으며, 코로나19감염병 확산 이전 실시된 2019년 1차 조사 대비 0.1%p 증가했다. <br>
+            학교급별로는 초등학교 3.8%, 중학교 0.9%, 고등학교 0.3%로 나타나, 모든 학교급에서 2021년 1차 조사 대비 증가하는 양상을 보였다. <br>
+            <img src="./img/현황2.png">
+        <br>
+        <br>
+        <br>
+        <center>
+            피해유형별 응답 비중은 언어폭력(41.8%), 신체폭력(14.6%), 집단따돌림(13.3%) 순으로, 이는 2021년 1차 조사 대비 집단따돌림(14.5%→13.3%),<br>
+            사이버폭력(9.8%→9.6%)의 비중은 감소하고, 신체폭력(12.4%→14.6%)의 비중은 증가한 수치이다. 모든 학교급에서 ‘언어폭력’의 비중이 가장 높게 나타났고, <br>
+            학교급별로 살펴보면 초등학교(14.6%)와 중학교(15.5%)는 ‘신체폭력’이, 고등학교(15.4%)는 ‘집단따돌림’이 높게 나타났다.<br>
+            <img src="./img/현황3.png">
+        <br>
+        <br>
+        <br>    
+        <center>
+            가해 응답률은 0.6%(1.9만 명)로 2021년 1차 조사 대비 0.2%p 증가했으나, 코로나19 이전 실시된 2019년 1차 조사와는 동일한 응답률을 보였다. <br>
+            목격 응답률은 3.8%(12.2만명)로, 2021년 1차 조사 대비 1.5%p 증가했으나 2019년 1차 조사보다 0.2%p 감소했다.<br>
+            <img src="./img/현황4.png">
+        <br>
+        <br>
+        <br>    
+        <center> 
+            더불어, 학교폭력 피해 후 ‘주위에 알리거나 신고했다’(89.3%→90.8%), 학교폭력 목격 후 ‘알리거나 도와줬다’(69.1%→69.8%)는 응답은 2021년 1차 조사 대비 증가한 모습을 보였다.   
+        <!-- 저작권 표시 -->
+        <br>
+        <br>
+        <hr>
+        <address align="center" style="font-size:xx-small;">
+            PROTECTION<br>&copy;BaekSeok University Class Culultur Art Web Contents Planned Production Team 4</address>
+    </body>
+</html>
+
+
+        <!-- 저작권 표시 -->
+        <br>
+        <br>
+        <hr>
+        <address align="center" style="font-size:xx-small;">
+            PROTECTION<br>&copy;BaekSeok University Class Culultur Art Web Contents Planned Production Team 4</address>
+    </body>
+</html>
